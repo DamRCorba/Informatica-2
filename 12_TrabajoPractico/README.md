@@ -5,7 +5,7 @@ Se las representa por medio de un *diagrama de estados y transiciones*. Cada est
 
 En el sentido estricto una máquina de estado lee sus entradas y variables, evalua la condición en el estado que se encuentra y cambia de estado.
 
-![./recursos/fsmgenerica.png](https://github.com/DamRCorba/Informatica-2/blob/master/12_TrabajoPractico/recursos/fsmgenerica.png)
+![./recursos/fsmgenerica.png](https://github.com/DamRCorba/Informatica-2/blob/main/12_TrabajoPractico/recursos/fsmgenerica.png)
 
 Cada circulo representa un estado y cada flecha representa a una transición.
 
