@@ -33,7 +33,7 @@ Primero el sistema calienta mientras que la temperatura sea menor a la configura
 
 ### Máquina de estado de Control de temperatura
 
- ![./recursos/fsmtemperatura.png](https://github.com/DamRCorba/Informatica-2/blob/master/12_TrabajoPractico/recursos/fsmtemperatura.png)
+ ![./recursos/fsmtemperatura.png](https://github.com/DamRCorba/Informatica-2/blob/main/12_TrabajoPractico/recursos/fsmtemperatura.png)
 
  - __SET__: Bandera de fin de inicialización
  - __t__: temperatura leida
