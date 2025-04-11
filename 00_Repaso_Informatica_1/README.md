@@ -66,7 +66,7 @@ Sobre ellas rigen las mismas reglas que para los arreglos. No se las puede compa
 
 - __Ejemplo de Cadenas:__
 
-[Ejemplo Cadenas](https://github.com/DamRCorba/Informatica2_2-12_2022/tree/master/00_Repaso_Informatica_1/ejemplos/cadenas)
+[Ejemplo Cadenas](https://github.com/DamRCorba/Informatica-2/tree/main/00_Repaso_Informatica_1/ejemplos/cadenas)
 
 ## Ejercicios Propuestos
 
