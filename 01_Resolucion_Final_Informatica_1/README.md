@@ -14,8 +14,9 @@ A. Cargar las fichas (no se saben cuantas son) teniendo en cuenta cargar las des
 B. Al finalizar el punto 1 emitir un listado ordenado por totales de artiíulo de la siguiente forma:
 
 Ej.
+```
  Articulo       Sucursal 1      Sucursal 2     Sucursal 3     Total
  Martillo         xxx                  xxx               xxx              xxx
  Pala               xxx                  xxx               xxx              xxx
-
+```
 2. Como seria una estructura para el punto anterior
