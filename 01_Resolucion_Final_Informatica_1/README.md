@@ -16,7 +16,7 @@ B. Al finalizar el punto 1 emitir un listado ordenado por totales de artiíulo d
 Ej.
 ```
  Articulo       Sucursal 1      Sucursal 2     Sucursal 3     Total
- Martillo         xxx                  xxx               xxx              xxx
- Pala               xxx                  xxx               xxx              xxx
+ Martillo          xxx             xxx            xxx          xxx
+ Pala              xxx             xxx            xxx          xxx
 ```
 2. Como seria una estructura para el punto anterior
