@@ -1,0 +1,3 @@
+1) Existe un archivo llamado "datos.dat" de tipo binario cuya organización es secuencial con la siguiente estructura: cl(clave ) entera, d(descripción) cadena de 30 caracteres, tipo (tipo de datos),entero sin signo, valor entero,  b( 'A': Alta    'B': Baja),Se pide:
+ Realizar una función que pase como parámetro la clave, entre otro(s) parámetros,  y encole dos valores: la clave y su posición física respecto al archivo (registro 1,2, etc), si el campo “tipo”  tiene el bit 0 con valor 1, en caso de no encontrarlo crear un nuevo registro en el archivo (sin encolarlo). La función retornara un puntero a la primer posicion de la cola.
+Realizar el main() con la llamada a dicha función. No utilizar variables Globales
