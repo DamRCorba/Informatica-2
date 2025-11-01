@@ -27,12 +27,15 @@ typedef struct {
 } resolve_t;
 
 resolve_t funcion(long id, resolve_t resolve);
+void muestra(resolve_t resolve);
 
 int main(int argc, char const *argv[])
 {
     long user_id;
     datos_t fileDato;
     resolve_t din;
+    din.pila = NULL;
+    din.cola = NULL;
 
     printf("\nIngrese el Id que desea buscar: ");
     scanf("%ld", &user_id);
@@ -48,7 +51,7 @@ int main(int argc, char const *argv[])
     {
         printf("\nID: %ld, Descripcion: %s, Tipo: %d, Marca: %c", fileDato.id, fileDato.descripcion, fileDato.tipo, fileDato.marca);
     }
-
+    muestra(din);
     return 0;
 }
 
@@ -89,6 +92,7 @@ resolve_t funcion(long id, resolve_t resolve)
         
         if( resolve.pila == NULL ){
             aux->lazo = NULL;
+            
             resolve.pila = aux;            
         } else {
             aux->lazo = resolve.pila;
@@ -132,4 +136,35 @@ resolve_t funcion(long id, resolve_t resolve)
 
     fclose(fp);
     return resolve;
+}
+
+void muestra(resolve_t resolve){
+    pila_t *stack;
+    cola_t *queue;
+    // DESAPILADO
+    while (resolve.pila->lazo != NULL)
+    {
+        printf("ID: %ld, Descripcion: %s, Tipo: %d, marca: %c",
+               resolve.pila->data.id, resolve.pila->data.descripcion, 
+               resolve.pila->data.tipo, resolve.pila->data.marca );
+
+        stack = resolve.pila;
+        resolve.pila = resolve.pila->lazo;
+        free(stack);
+    }
+    printf("ID: %ld, Descripcion: %s, Tipo: %d, marca: %c",
+           resolve.pila->data.id, resolve.pila->data.descripcion,
+           resolve.pila->data.tipo, resolve.pila->data.marca);
+    free(resolve.pila);
+    
+    // DESENCOLADO
+    while (resolve.cola->lazo != NULL){
+        printf("ID: %ld, Descripcion: %s" , resolve.cola->id, resolve.cola->descripcion);
+        stack = resolve.cola;
+        resolve.cola = resolve.cola->lazo;
+        free(stack);            
+    }
+    printf("ID: %ld, Descripcion: %s", resolve.cola->id, resolve.cola->descripcion);
+    free(resolve.cola);
+    return;
 }
